@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Function JavaScript</title>
+</head>
+<body>
+
+<script>
+
+    // contoh function tanpa parameter/argument
+    function salam() {
+        console.log("Selamat Pagi");
+        document.write("Selamat Pagi");
+    }
+
+    // memanggil function salam
+    salam();
+
+
+    // contoh function dengan parameter/argument
+    function salam_nama(nama, alamat) {
+        console.log("Selamat Pagi " + nama);
+
+        document.write("<br>Selamat Pagi " + nama);
+        document.write("<br>Alamat: " + alamat);
+    }
+
+    // memanggil function salam_nama
+    salam_nama("Danu Ariansyah", "Jl. Menuju kebaikan No. 123");
+
+
+    // function dengan return value
+    function hitung_luas_persegi(sisi) {
+
+        let luas = sisi * sisi;
+
+        return luas;
+    }
+
+    // memanggil function hitung_luas_persegi
+    // dan menyimpan hasilnya dalam variabel
+    let sisi_persegi = 5;
+
+    let hasil_luas = hitung_luas_persegi(sisi_persegi);
+
+    document.write("<br>Luas Persegi: " + hasil_luas);
+
+</script>
+
+</body>
+</html>
