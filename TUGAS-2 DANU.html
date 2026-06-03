@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Kompleks</title>
+</head>
+<body>
+
+<h2>Contoh Function Kompleks</h2>
+
+<script>
+
+    // ====================================
+    // FUNCTION MENGHITUNG TOTAL BELANJA
+    // ====================================
+
+    function hitungBelanja(namaBarang, harga, jumlah, diskon){
+
+        // menghitung total awal
+        let total = harga * jumlah;
+
+        // menghitung potongan diskon
+        let potongan = total * (diskon / 100);
+
+        // total akhir
+        let totalBayar = total - potongan;
+
+        // menampilkan hasil
+        document.write("<h3>Data Belanja</h3>");
+
+        document.write("Nama Barang : " + namaBarang + "<br>");
+        document.write("Harga Barang : Rp." + harga + "<br>");
+        document.write("Jumlah Barang : " + jumlah + "<br>");
+        document.write("Diskon : " + diskon + "%<br>");
+        document.write("Total Bayar : Rp." + totalBayar + "<br><br>");
+
+        // return value
+        return totalBayar;
+    }
+
+
+    // memanggil function
+    let hasil = hitungBelanja(
+        "Laptop",
+        5000000,
+        2,
+        10
+    );
+
+    console.log("Total akhir = " + hasil);
+
+
+    // ====================================
+    // FUNCTION CEK BILANGAN GANJIL/GENAP
+    // ====================================
+
+    function cekBilangan(angka){
+
+        if(angka % 2 == 0){
+
+            return "Bilangan Genap";
+
+        }else{
+
+            return "Bilangan Ganjil";
+
+        }
+
+    }
+
+    // memanggil function kedua
+    let hasilBilangan = cekBilangan(15);
+
+    document.write("<h3>Pengecekan Bilangan</h3>");
+    document.write("Angka 15 adalah " + hasilBilangan);
+
+</script>
+
+</body>
+</html>
