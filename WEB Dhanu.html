@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Objek Mahasiswa</title>
+</head>
+<body>
+
+    <h2>Data Mahasiswa</h2>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Jurusan</th>
+                <th>Fakultas</th>
+            </tr>
+        </thead>
+        <tbody id="dataMahasiswa">
+        </tbody>
+    </table>
+
+    <script>
+        // Array objek
+        const mahasiswa = [
+            {
+                nim: "2310118976",
+                nama: "RuriAnika",
+                jurusan: "Informatika",
+                fakultas: "Fakultas Teknik"
+            },
+            {
+                nim: "231011957",
+                nama: "DarisArwa",
+                jurusan: "Informatika",
+                fakultas: "Fakultas Teknik"
+            },
+            {
+                nim: "2310118976",
+                nama: "Katmidi",
+                jurusan: "Informatika",
+                fakultas: "Fakultas Teknik"
+            },
+            {
+                nim: "2310118976",
+                nama: "InaSupina",
+                jurusan: "Informatika",
+                fakultas: "Fakultas Teknik "
+            },
+            {
+                nim: "23101594",
+                nama: "HeldaMelaini",
+                jurusan: "Keperawatan",
+                fakultas: "IlmuKesehatan "
+            },
+            {
+                nim: "23101746546",
+                nama: "JesikaSalsa",
+                jurusan: "PendidikanJasmani",
+                fakultas: "Fakultas Pendidikan "
+            },
+            {
+                nim: "231087353",
+                nama: "ImarIndarti",
+                jurusan: "PGSD",
+                fakultas: "Fakultas Pendidikan "
+            },
+            {
+                nim: "2319874578",
+                nama: "DinaSanti",
+                jurusan: "HukumPidana",
+                fakultas: "Fakultas Hukum "
+            },
+            {
+                nim: "23101848756",
+                nama: "ZulfanNurRamdhani",
+                jurusan: "Keuangan",
+                fakultas: "Fakultas Management "
+            },
+            {
+                nim: "231011934",
+                nama: "DanuAriansyah",
+                jurusan: "Teknik Informatika",
+                fakultas: "Fakultas Ilmu Komputer"
+            },
+            {
+                nim: "2310113456",
+                nama: "DeswitaAnanda",
+                jurusan: "Farmasi",
+                fakultas: "Ilmu Kesehatan"
+            }
+        ];
+
+        let output = "";
+
+        mahasiswa.forEach(mhs => {
+            output += `
+                <tr>
+                    <td>${mhs.nim}</td>
+                    <td>${mhs.nama}</td>
+                    <td>${mhs.jurusan}</td>
+                    <td>${mhs.fakultas}</td>
+                </tr>
+            `;
+        });
+
+        document.getElementById("dataMahasiswa").innerHTML = output;
+    </script>
+
+</body>
+</html>
