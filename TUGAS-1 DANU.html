@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>If Else & Switch Case</title>
+</head>
+<body>
+
+<h2>Contoh If Else dan Switch Case</h2>
+
+<script>
+
+    // =========================
+    // CONTOH IF ELSE KOMPLEKS
+    // =========================
+
+    let nilai = 85;
+
+    document.write("<h3>Hasil Penilaian</h3>");
+
+    if (nilai >= 90) {
+
+        document.write("Grade A");
+
+    } else if (nilai >= 80) {
+
+        document.write("Grade B");
+
+    } else if (nilai >= 70) {
+
+        document.write("Grade C");
+
+    } else if (nilai >= 60) {
+
+        document.write("Grade D");
+
+    } else {
+
+        document.write("Grade E");
+
+    }
+
+
+    // =========================
+    // SWITCH CASE KOMPLEKS
+    // =========================
+
+    let hari = 3;
+
+    document.write("<h3>Jadwal Hari</h3>");
+
+    switch(hari){
+
+        case 1:
+            document.write("Senin - Mata Kuliah Algoritma");
+            break;
+
+        case 2:
+            document.write("Selasa - Mata Kuliah Basis Data");
+            break;
+
+        case 3:
+            document.write("Rabu - Mata Kuliah Pemrograman Web");
+            break;
+
+        case 4:
+            document.write("Kamis - Mata Kuliah AI");
+            break;
+
+        case 5:
+            document.write("Jumat - Mata Kuliah Jaringan");
+            break;
+
+        default:
+            document.write("Hari Libur");
+
+    }
+
+</script>
+
+</body>
+</html>
